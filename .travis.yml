@@ -25,7 +25,7 @@ after_success:
     git config user.email '2656518848@qq.com';
     git add .;
     git commit -m 'build';
-    git push https://${GH_TOKEN}@github.com/zhaoyinmei/www.git master:gh-pages -f;
+    git push https://${GH_TOKEN}@github.com/zhaoyinmei/wwwsite.git master:gh-pages -f;
     fi
 
 branches:
