@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --no-cache --no-source-maps --public-url=/",
