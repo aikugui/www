@@ -10,3 +10,5 @@ https://zhaoyinmei.com
 然后就可以 yarn dev,可以访问你要访问的页面 例如访问首页 ：http://localhost:1234/index.html
 
 最后写完后 yarn build
+
+--pai 测试提交------------
