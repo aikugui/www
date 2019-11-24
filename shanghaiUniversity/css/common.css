@@ -155,6 +155,7 @@
 }
 .banner .swiper-container {
   width: 100%;
+  min-width: 1200px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -163,9 +164,9 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  display: block;
   /* Center slide text vertically */
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -176,7 +177,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  align-items: center; */
 }
 .banner .swiper_img {
   width: 100%;
@@ -204,7 +205,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-/* 轮播图下面的字 */
+/* 轮播图下面的 半透明黑背景 */
 .banner .banner_background {
   position: absolute;
   bottom: 0;
@@ -214,6 +215,13 @@
     rgba(0, 0, 0, 0.47) 100%
   );
   width: 100%;
+  height: 273px;
+}
+/* 轮播图下面的 文字 */
+.banner .banner_Text {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
   height: 273px;
 }
 .banner .banner_title {
@@ -231,6 +239,7 @@
   top: 192px;
   font-size: 22px;
   width: 850px;
+  line-height: 30px;
   text-align: left;
 }
 /* 中间部分 */
