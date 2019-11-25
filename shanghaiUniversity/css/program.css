@@ -157,6 +157,18 @@
   color: #1a467a;
   font-size: 20px;
 }
+.program-course .cnetent_text .title > a{
+  float: right;
+  display: inline-block;
+  margin: 11px 0 0 40px;
+  padding: 0 16px;
+  background-color: #1a467a;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .program-course .menu_list {
   width: 100%;
   padding-left: 46px;
@@ -167,7 +179,7 @@
   margin: 0;
   padding: 14px 0;
   line-height: 39px;
-  background: #fff url(../img/+\copy\2png) center right no-repeat;
+  background: #fff url(../img/add_copy_2.png) center right no-repeat;
   background-position: 854px 25px !important;
   font-size: 22px;
   color: #333;
