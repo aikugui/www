@@ -272,7 +272,60 @@
           </div>
           <div class="contentarea">
             <div class="oneRight_info tabcontent fee">
-              11111
+              <div class="content_title">Fees</div>
+              <div class="content_bar">
+                专业课程的相关费用.pdf
+                <a class="link"><img src="./img/download.png" /></a>
+              </div>
+              <div class="content_sub_title">Fees Calculator</div>
+              <div class="sub_box box1">
+                <div class="menu_top_title"><span class="left_bar"></span>Are you an international applicant?</div>
+                <div class="checkbox">
+                  <p class="checkItem"><span class="checkItem_box"></span>Yes (Online Application Fee RMB 450 will be
+                    applied)</p>
+                  <p class="checkItem"><span class="checkItem_box checked"></span>No</p>
+                </div>
+                <div class="total_money">RMB:500</div>
+              </div>
+              <div class="sub_box box2">
+                <div class="menu_top_title"><span class="left_bar"></span>Tuition Fee</div>
+                <div class="checkbox">
+                  <p class="title_text">(Please Enter Your Tuition Fee)</p>
+                  <p class="title_text"><input type="text" placeholder="请输入" class="input_text" /></p>
+                </div>
+                <div class="total_money">
+                  <p class="sub1">RMB：0</p>
+                  <p class="sub2">预留费为：0</p>
+                  <p class="sub3">( 预留费为学费的50% ）</p>
+                </div>
+              </div>
+              <div class="sub_box">
+                <div class="menu_top_title"><span class="left_bar"></span>Do you need accommodations on campus?</div>
+                <div class="checkbox">
+                  <p class="checkItem"><span class="checkItem_box"></span>RMB 2000/year</p>
+                  <p class="checkItem"><span class="checkItem_box checked"></span>RMB 3000/year</p>
+                </div>
+                <div class="total_money">
+                  RMB：2000
+                </div>
+              </div>
+              <div class="sub_box">
+                <div class="menu_top_title"><span class="left_bar"></span>Living Expenses</div>
+                <div class="checkbox">
+                  <p class="title_text">(Student will spend around RMB 35,000 yearly in average.)</p>
+                  <div class="title_text">
+                    <input type="text" placeholder="请输入" class="input_text borderradius" />
+                    <div class="ajust_btn">Adjust</div>
+                  </div>
+                </div>
+                <div class="total_money">
+                  RMB：35,000
+                </div>
+              </div>
+              <div class="total_box">
+                <p><span class="total">Total</span><span class="money">RMB ≈ 180,450</span></p>
+                <p class="tips">注：以上价格为参考价格，实际价格以实际报到为准</p>
+              </div>
 
             </div>
             <div class="oneRight_info tabcontent pay">
@@ -294,19 +347,22 @@
                 <li><span class="circle"></span>Account No.: 033584-00801000968</li>
                 <li><span class="circle"></span>Beneficiary: Shanghai University </li>
               </ul>
-              <div class="menu_top_title"><span class="left_bar"></span>For SHU-UTS SILC Business School (SILC) </div>
+              <div class="menu_top_title"><span class="left_bar"></span>For SHU-UTS SILC Business School (SILC)
+              </div>
               <ul class="ul1">
                 <li><span class="circle"></span>Account Name: SHU-UTS SILC BUSINESS SCHOOL
                 </li>
                 <li><span class="circle"></span>Account Number: 31634000002047078</li>
                 <li><span class="circle"></span>Beneficiary Bank’s Name: bank of shanghai </li>
                 <li><span class="circle"></span>Beneficiary bank’s wift code: boshcnsh </li>
-                <li><span class="circle"></span>Beneficiary Address: No 20 chengzhong road, jiading district, shanghai
+                <li><span class="circle"></span>Beneficiary Address: No 20 chengzhong road, jiading district,
+                  shanghai
                 </li>
               </ul>
               <p class="onright_littletext2">Note:<br>
                 The tuition fee for the program of Finance taught in English should be paid to the bank account of
-                SHU-UTS SILC Business School (SILC).The tuition fee for the program of Global Local MBA should be paid
+                SHU-UTS SILC Business School (SILC).The tuition fee for the program of Global Local MBA should be
+                paid
                 to the bank account of MBA Centre.Registration fees are non-refundable, whether admitted or not.
               </p>
             </div>
@@ -329,7 +385,8 @@
             </div>
             <div style="display:none" class="menu_body">
               Macquarie University alumni are entitled to free lifetime membership of Macquarie University Library,
-              including borrowing privileges and special access to online databases and ebooks. See the alumni benefits
+              including borrowing privileges and special access to online databases and ebooks. See the alumni
+              benefits
               page for more information.
             </div>
             <div class="menu_head">
@@ -533,6 +590,13 @@
     var index = $(this).index();
     $(".contentarea>.tabcontent").eq(index).show().siblings().hide();
   })
+
+  //checkbox
+  $(".sub_box .checkbox .checkItem").click(function () {
+    $(this).find('.checkItem_box').addClass('checked');
+    $(this).siblings().find('.checkItem_box').removeClass('checked');
+  })
+
 
 
   //FAQS
