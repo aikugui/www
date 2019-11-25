@@ -1,0 +1,467 @@
+/* 导航 */
+.header {
+  width: 100%;
+  min-width: 1200px;
+  height: 75px;
+  background: #1b477b;
+}
+.header .header_container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  width: 155px;
+  height: 57px;
+  padding-top: 9px;
+}
+.header .logo_right {
+  line-height: 75px;
+  display: inline-block;
+  float: right;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .logo_right > div {
+  float: left;
+}
+.header .logo_right .language {
+  margin-left: 50px;
+  margin-right: 10px;
+}
+.header .logo_right .change_language {
+  width: 20px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+.header .search {
+  width: 24px;
+  object-fit: cover;
+  position: relative;
+  top: 6px;
+  cursor: pointer;
+}
+/* nav */
+.nav {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 110px;
+  line-height: 110px;
+  overflow: hidden;
+}
+.nav .global-search {
+  position: absolute;
+  left: 0;
+  top: -110px;
+  z-index: 1;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  background-color: #1b477b;
+  transition: top 1s;
+  -moz-transition: top 1s; /* Firefox 4 */
+  -webkit-transition: top 1s; /* Safari 和 Chrome */
+  -o-transition: top 1s; /* Opera */
+}
+.nav .global-search.show {
+  top: 0;
+}
+.nav .global-search .search-input {
+  margin: 30px auto 0;
+  width: 1200px;
+  height: 110px;
+  overflow: hidden;
+}
+.nav .global-search .search-input input {
+  padding: 0 10px;
+  float: left;
+  width: calc(100% - 88px);
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(53, 121, 202, 0.3);
+  border: 1px solid #3579ca;
+  font-size: 16px;
+  color: #163a66;
+  box-sizing: border-box;
+  border-right: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.nav .global-search .search-input input::placeholder {
+  color: #163a66;
+}
+.nav .global-search .search-input button {
+  float: left;
+  width: 84px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.nav .global-search .search-input button img {
+  width: 31px;
+}
+.nav ul {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1200px;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li .nav-link {
+  margin-right: 65px;
+  font-size: 13px;
+  color: #444446;
+  font-weight: 500;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.nav ul li .nav-link.active {
+  border-bottom: 2px solid #1b477b;
+  color: #1b477b;
+}
+.nav ul li .nav-link:hover {
+  border-bottom: 2px solid #1b477b;
+  color: #1b477b;
+}
+.nav ul li .btn {
+  display: inline-block;
+  background: #1b477b;
+  color: #ffffff;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* banner */
+.banner_img {
+  position: relative;
+}
+.banner_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.banner_background {
+  position: absolute;
+  width: 100%;
+  /*height: 2.73rem;*/
+  top: 4.73rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.47) 100%
+  );
+}
+.banner_title {
+  position: absolute;
+  top: 5.96rem;
+  left: 3.61rem;
+  color: #ffffff;
+  font-size: 0.49rem;
+  line-height: 0.49rem;
+}
+.banner_text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.22rem;
+  top: 6.65rem;
+  left: 3.61rem;
+  line-height: 0.3rem;
+}
+/* content */
+.content {
+  width: 12rem;
+  margin: 0 auto;
+}
+.city {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.city .left {
+  flex: 1;
+  margin-right: 0.38rem;
+}
+.city .left_title {
+  color: #333333;
+  font-size: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+.city .left_info {
+  color: #333333;
+  font-size: 0.19rem;
+  line-height: 0.36rem;
+}
+.city .right {
+  flex: 1;
+}
+.city .right img {
+  width: 6.01rem;
+  height: 4.01rem;
+  object-fit: cover;
+}
+.university {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.3rem;
+}
+.university .left {
+  flex: 1;
+  margin-right: 0.4rem;
+}
+.university .left .left_img img {
+  width: 5.96rem;
+  height: 3.97rem;
+  object-fit: cover;
+}
+.university .right {
+  flex: 1;
+}
+.university .right_title {
+  color: #333333;
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+.university .right_info {
+  color: #333333;
+  font-size: 0.19rem;
+  line-height: 0.36rem;
+}
+.prospectus {
+  width: 12rem;
+  margin: 0 auto;
+  margin-top: 0.7rem;
+}
+.prospectus_btn {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+.prospectus_btn .sp {
+  background: #1b477b;
+  padding: 0.2rem 0.3rem;
+  color: #ffffff;
+  font-size: 0.3rem;
+}
+/* schools */
+.schools {
+  width: 12rem;
+  margin: 0 auto;
+}
+.schools_title {
+  text-align: center;
+  color: #000000;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  font-weight: normal;
+}
+.schools_info {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-size: 0.32rem;
+  line-height: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+.schools_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schools_content .left {
+  flex: 1;
+}
+.schools_content .left img {
+  width: 5.99rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.schools_content .right {
+  flex: 1;
+}
+.schools_content .right .right_one {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schools_content .right .right_one .one_img {
+  width: 3rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.item {
+  line-height: 0;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.item .item_info {
+  width: 100%;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0px;
+  left: -10rem;
+  opacity: 0;
+  color: #fff;
+  transition: left 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: left 0.2s linear, opacity 0.2s linear;
+}
+.item .item_title {
+  margin-top: 0.3rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-size: 0.22rem;
+}
+.item .item_text {
+  font-size: 0.15rem;
+  line-height: 0.3rem;
+  text-align: center;
+}
+.item:hover .item_info {
+  left: 0px;
+  opacity: 1;
+  transition: left 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: left 0.2s linear, opacity 0.2s linear;
+}
+.two_img {
+  width: 3rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.schools_content .right .right_two {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schools_content .right .right_two img {
+  width: 3rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* Useful */
+.useful {
+  width: 12rem;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+}
+.useful_title {
+  text-align: center;
+  color: #000000;
+  font-size: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.userful_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.useful_one {
+  flex: 1.2;
+  text-align: center;
+}
+.useful_two {
+  flex: 1;
+}
+.useful_three {
+  flex: 1;
+}
+.useful_one_title {
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.34rem;
+}
+.useful_one_text {
+  font-size: 0.2rem;
+  color: #333333;
+  line-height: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+  text-align: left;
+}
+.useful_dashed {
+  border-right: 1px dashed #bcbcbc;
+  margin-right: 0.4rem;
+  box-sizing: border-box;
+}
+/* foot */
+.foot {
+  background: #1b477b;
+  min-height: 4.92rem;
+  padding-top: 0.32rem;
+  box-sizing: border-box;
+  padding-bottom: 0.5rem;
+}
+.foot_content {
+  width: 12rem;
+  margin: 0 auto;
+}
+.foot_img img {
+  width: 2.27rem;
+  height: 0.83rem;
+  object-fit: cover;
+  margin-bottom: 0.6rem;
+}
+.foot_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.foot_one {
+  flex: 2;
+  line-height: 0.35rem;
+  margin-right: 0.54rem;
+}
+
+.foot_three {
+  flex: 2;
+}
+.foot_title {
+  color: #fff;
+  font-size: 0.22rem;
+  font-weight: 500;
+  margin-bottom: 0.18rem;
+}
+.foot_text {
+  color: #c5c5c5;
+  font-size: 0.14rem;
+}
+.foot_two {
+  flex: 1;
+  color: #c5c5c5;
+  font-size: 0.14rem;
+  line-height: 0.35rem;
+  margin-right: 0.48rem;
+}
+.foot_three_text {
+  color: #c5c5c5;
+  font-size: 0.14rem;
+  line-height: 0.35rem;
+}
+/* footer */
+.footer {
+  background: #133d6f;
+  height: 0.7rem;
+  line-height: 0.7rem;
+}
+.footer_content {
+  width: 12rem;
+  margin: 0 auto;
+}
+.footer_text {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.16rem;
+}
