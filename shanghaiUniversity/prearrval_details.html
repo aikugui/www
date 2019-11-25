@@ -9,8 +9,7 @@
   <title>上海大学</title>
   <link rel="stylesheet" href="./css/rest.css">
   <link rel="stylesheet" href="./css/prearrval_details.css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="./js/flexible.js"></script>
+
 </head>
 
 <body>
@@ -91,21 +90,23 @@
         </div>
       </div>
       <div class="right_content_info">
-          <div class="oneRight">
-            <div class="oneRight_title">Laws & Regulations</div>
-             <div class="laws_info">
-                <div class="laws_info_title">Congratulations on your admission to Shanghai University!</div>
-                <div class="laws_info_content">
-                    Please abide by the laws of the Chinese government and the school rules and regulations of <br>the school, especially:<br>
-                    a) it is illegal to use drugs (including marijuana);<br>
-                   b) it is illegal to publish, organize, assemble, March, demonstrate, preach, etc.; <br>
-                   c) it is illegal to drive unlicensed and unlicensed motor vehicles; <br>
-                   d) it will be fined and detained by the police if the visa, residence permit, accommodation registration<br> expires and illegal work They even have to leave the country within a time limit.
-                   
-                </div>
-             </div>
+        <div class="oneRight">
+          <div class="oneRight_title">Laws & Regulations</div>
+          <div class="laws_info">
+            <div class="laws_info_title">Congratulations on your admission to Shanghai University!</div>
+            <div class="laws_info_content">
+              Please abide by the laws of the Chinese government and the school rules and regulations of <br>the school,
+              especially:<br>
+              a) it is illegal to use drugs (including marijuana);<br>
+              b) it is illegal to publish, organize, assemble, March, demonstrate, preach, etc.; <br>
+              c) it is illegal to drive unlicensed and unlicensed motor vehicles; <br>
+              d) it will be fined and detained by the police if the visa, residence permit, accommodation
+              registration<br> expires and illegal work They even have to leave the country within a time limit.
+
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 
@@ -201,9 +202,10 @@
   //点击切换不同的内容
   $('.left_info').click(function () {
     $(this).addClass('active_item').siblings().removeClass('active_item')
-    var index = $(this).index()-1;
-     $(".right>.right_content_info").eq(index).show().siblings().hide();
+    var index = $(this).index() - 1;
+    $(".right>.right_content_info").eq(index).show().siblings().hide();
   })
+
 </script>
 
 </html>

@@ -122,7 +122,8 @@
   margin-top: 15px;
 }
 
-.oneRight_info .content .ul1 li {
+.oneRight_info .content .ul1 li,
+.tabcontent .ul1 li {
   line-height: 28px;
   font-size: 18px;
   font-family: PingFangSC-Regular, PingFang SC;
@@ -130,7 +131,8 @@
   color: rgba(85, 85, 85, 1);
 }
 
-.oneRight_info .content .ul1 li .circle {
+.oneRight_info .content .ul1 li .circle,
+.tabcontent .ul1 li .circle {
   width: 10px;
   height: 10px;
   background: rgba(26, 70, 122, 1);
@@ -139,7 +141,8 @@
   margin-right: 5px;
 }
 
-.oneRight_info .content .ul1 li .circle2 {
+.oneRight_info .content .ul1 li .circle2,
+.tabcontent .ul1 li .circle2 {
   width: 10px;
   height: 10px;
   background: rgba(26, 70, 122, 1);
@@ -150,7 +153,8 @@
   margin-top: 8px;
 }
 
-.oneRight_info .content .ul1 li .licon {
+.oneRight_info .content .ul1 li .licon,
+.tabcontent .ul1 li .licon {
   display: inline-block;
   width: 800px;
   line-height: ;
@@ -164,7 +168,8 @@
   line-height: 28px;
 }
 
-.oneRight_info .content .note ul li {
+.oneRight_info .content .note ul li,
+.tabcontent .note ul li {
   line-height: 26px;
   font-size: 18px;
   font-family: PingFangSC-Regular, PingFang SC;
@@ -210,6 +215,15 @@
   font-weight: 400;
   color: rgba(85, 85, 85, 1);
   line-height: 30px;
+}
+
+.onright_littletext2 {
+  font-size: 18px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(85, 85, 85, 1);
+  line-height: 30px;
+  margin: 20px 0 0 0;
 }
 
 .oneRight_info .content p.onright_text2 {
@@ -329,7 +343,8 @@
   box-sizing: border-box;
 }
 
-.application_faqs .menu_top_title {
+.application_faqs .menu_top_title,
+.tabcontent .menu_top_title {
   height: 22px;
   font-size: 22px;
   font-family: PingFangSC-Medium, PingFang SC;
@@ -339,7 +354,8 @@
   margin: 30px 0;
 }
 
-.application_faqs .menu_top_title .left_bar {
+.application_faqs .menu_top_title .left_bar,
+.tabcontent .menu_top_title .left_bar {
   width: 6px;
   height: 19px;
   background: rgba(26, 70, 122, 1);
@@ -624,6 +640,15 @@
   color: rgba(51, 51, 51, 1);
   line-height: 22px;
   padding-left: 46px;
+}
+
+.right_content_info .content_title {
+  font-size: 22px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  line-height: 22px;
+  padding: 15px 0;
 }
 
 /* Useful */
