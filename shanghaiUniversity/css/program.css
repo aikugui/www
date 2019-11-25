@@ -1,0 +1,458 @@
+.banner .banner_background {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.47) 100%
+  );
+  width: 100%;
+  height: 273px;
+}
+.banner .banner_Text {
+  position: absolute;
+  left: 50%;
+  bottom: 21px;
+  width: 1200px;
+  height: auto;
+  text-align: left;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+}
+.banner .banner_title {
+  position: static;
+  text-align: left;
+  margin: 0 0 20px;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 49px;
+  font-family: FuturaBT-BoldItalic, FuturaBT;
+}
+.banner .banner_info {
+  position: static;
+  text-align: left;
+  color: #ffffff;
+  font-size: 22px;
+  width: 850px;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* 中间内容部分 */
+.program-course {
+  width: 1200px;
+  margin: 0 auto 79px;
+  display: block;
+  overflow: hidden;
+}
+.program-course .silder_content {
+  float: left;
+  display: inline-block;
+  width: 275px;
+}
+.program-course .accordion {
+  list-style-type: none;
+  background: #1a467a;
+  /* -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; */
+}
+.program-course .accordion a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.program-course .accordion .link {
+  position: relative;
+  display: block;
+  padding: 23px 10px 23px 13px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.program-course .accordion > li .link .border-right-empty {
+  display: block;
+}
+.program-course .accordion > li .link .border-down-empty {
+  display: none;
+}
+.program-course .accordion > li.open .link .border-right-empty {
+  display: none;
+}
+.program-course .accordion > li.open .link .border-down-empty {
+  display: block;
+}
+.program-course .accordion > li:last-child .link {
+  border-bottom: 0;
+}
+
+.program-course .accordion > li i {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.program-course .accordion li i.fa-chevron-down {
+  right: 15px;
+  left: auto;
+  font-size: 16px;
+}
+.program-course .accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**
+  * Submenu
+  -----------------------------*/
+.program-course .submenu {
+  display: none;
+  background: #ffffff;
+  font-size: 15px;
+}
+
+.program-course .submenu a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  padding: 12px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+.program-course .activeBack {
+  background: rgba(26, 70, 122, 0.06);
+}
+.program-course .submenu a:hover {
+  background: rgba(26, 70, 122, 0.06);
+}
+.program-course .zhanshi {
+  display: block;
+}
+.program-course .cnetent_text {
+  float: left;
+  width: 925px;
+}
+/* 每个li对应不同的内容 */
+.program-course .cnetent_text .title {
+  background: #f8fafb;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 46px;
+  color: #1a467a;
+  font-size: 20px;
+}
+.program-course .cnetent_text .title > a{
+  float: right;
+  display: inline-block;
+  margin: 11px 0 0 40px;
+  padding: 0 16px;
+  background-color: #1a467a;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.program-course .menu_list {
+  width: 100%;
+  padding-left: 46px;
+  box-sizing: border-box;
+}
+.program-course .menu_head {
+  position: relative;
+  margin: 0;
+  padding: 14px 0;
+  line-height: 39px;
+  background: #fff url(../img/add_copy_2.png) center right no-repeat;
+  background-position: 854px 25px !important;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 1px solid #e1e1e1;
+  font-weight: bold;
+}
+.program-course .menu_list .current {
+  background: #fff url(../img/-.png) center right no-repeat;
+}
+.program-course .menu_title {
+  font-weight: normal;
+}
+.program-course .menu_title a {
+  color: #1a467a;
+  text-decoration: none;
+}
+.program-course .menu_body a:hover {
+  text-decoration: none;
+}
+.program-course .menu_body a {
+  position: relative;
+  display: block;
+  padding: 24px 0 24px 40px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #555555;
+  background: #fbfbfb;
+  text-decoration: none;
+  border-bottom: 1px solid #e9e9e9;
+}
+.program-course .menu_body a > i {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #1a467a;
+  border-radius: 50%;
+  left: 18px;
+  top: 29px;
+}
+.program-course .menu_body a:hover {
+  text-decoration: none;
+}
+
+.border-down-empty {
+  float: right;
+  display: inline-block;
+  margin: 8px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  position: relative;
+}
+.border-down-empty span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #1a467a;
+  position: absolute;
+  left: -16px;
+  top: -19px;
+}
+
+.border-right-empty {
+  float: right;
+  display: inline-block;
+  margin: 2px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  position: relative;
+}
+.border-right-empty span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 16px solid #1a467a;
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid transparent;
+  position: absolute;
+  left: -20px;
+  top: -16px;
+}
+
+.content_search {
+  margin-top: 95px;
+  background: url("../img/Group\ 2.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 441px;
+}
+.search_container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 90px;
+  box-sizing: border-box;
+}
+.search_title {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 88px;
+  font-family: Futura Md BT Bold Italic;
+  font-weight: bold;
+}
+.selectBox {
+  float: left;
+  width: 312px;
+  display: inline-block;
+  border: 1px solid #3579ca;
+  border-radius: 4px;
+}
+.select {
+  float: left;
+  width: 312px;
+  background-color: #2a5f9e;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 3px;
+}
+.select .selectText {
+  padding-top: 15px;
+  padding-left: 11px;
+  color: #fff;
+  font-size: 14px;
+}
+.select img {
+  float: right;
+  padding-top: 15px;
+  padding-right: 15px;
+  width: 17px;
+  height: 17px;
+  object-fit: cover;
+  /*			position: absolute;
+		top: 10px;*/
+  cursor: pointer;
+}
+.selectOption {
+  background-color: #666666;
+  width: 312px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  display: none;
+}
+.selectOption li {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.selectOption li:hover {
+  background-color: #2a5f9e;
+}
+.mr_30 {
+  margin-right: 30px;
+}
+.container .find-a-program .search-input {
+  float: left;
+  display: inline-block;
+  margin-left: 27px;
+  width: 515px;
+}
+.container .find-a-program .search-input input {
+  padding: 0 10px;
+  float: left;
+  width: calc(100% - 88px);
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(53, 121, 202, 0.3);
+  border: 1px solid #3579ca;
+  font-size: 16px;
+  color: #fff;
+  box-sizing: border-box;
+  border-right: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.container .find-a-program .search-input input::placeholder {
+  color: #fff;
+}
+.container .find-a-program .search-input button {
+  float: left;
+  width: 84px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.container .find-a-program .search-input button img {
+  width: 31px;
+}
+.input {
+  width: 436px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background: #2a5f9e;
+  color: #fff;
+  font-size: 14px;
+}
+.search_back {
+  display: inline-block;
+}
+.search_back img {
+  width: 31px;
+  object-fit: cover;
+  height: 31px;
+  margin-bottom: -10px;
+}
+
+/* Useful */
+.useful {
+  width: 1200px;
+  margin: 130px auto;
+}
+.useful_title {
+  text-align: center;
+  color: #000000;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.userful_content {
+  overflow: hidden;
+}
+.useful_one {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+}
+.useful_two {
+  float: left;
+  padding: 0 57px 0 40px;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+.useful_three {
+  float: left;
+  width: 33.33%;
+}
+.useful_one_title {
+  text-indent: 60px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 34px;
+}
+.useful_one_text {
+  font-size: 20px;
+  color: #333333;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+.useful_dashed {
+  border-right: 1px dashed #bcbcbc;
+  box-sizing: border-box;
+}
