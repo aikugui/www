@@ -1,0 +1,346 @@
+/* 导航 */
+.header {
+  width: 100%;
+  min-width: 1200px;
+  height: 75px;
+  background: #1b477b;
+}
+.header .header_container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  width: 155px;
+  height: 57px;
+  padding-top: 9px;
+}
+.header .logo_right {
+  line-height: 75px;
+  display: inline-block;
+  float: right;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .logo_right > div {
+  float: left;
+}
+.header .logo_right .language {
+  margin-left: 50px;
+  margin-right: 10px;
+}
+.header .logo_right .change_language {
+  width: 20px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+.header .search {
+  width: 24px;
+  object-fit: cover;
+  position: relative;
+  top: 6px;
+  cursor: pointer;
+}
+/* nav */
+.nav {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 110px;
+  line-height: 110px;
+  overflow: hidden;
+}
+.nav .global-search {
+  position: absolute;
+  left: 0;
+  top: -110px;
+  z-index: 1;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  background-color: #1b477b;
+  transition: top 1s;
+  -moz-transition: top 1s; /* Firefox 4 */
+  -webkit-transition: top 1s; /* Safari 和 Chrome */
+  -o-transition: top 1s; /* Opera */
+}
+.nav .global-search.show {
+  top: 0;
+}
+.nav .global-search .search-input {
+  margin: 30px auto 0;
+  width: 1200px;
+  height: 110px;
+  overflow: hidden;
+}
+.nav .global-search .search-input input {
+  padding: 0 10px;
+  float: left;
+  width: calc(100% - 88px);
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(53, 121, 202, 0.3);
+  border: 1px solid #3579ca;
+  font-size: 16px;
+  color: #163a66;
+  box-sizing: border-box;
+  border-right: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.nav .global-search .search-input input::placeholder {
+  color: #163a66;
+}
+.nav .global-search .search-input button {
+  float: left;
+  width: 84px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.nav .global-search .search-input button img {
+  width: 31px;
+}
+.nav ul {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1200px;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li .nav-link {
+  margin-right: 65px;
+  font-size: 13px;
+  color: #444446;
+  font-weight: 500;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.nav ul li .nav-link.active {
+  border-bottom: 2px solid #1b477b;
+  color: #1b477b;
+}
+.nav ul li .nav-link:hover {
+  border-bottom: 2px solid #1b477b;
+  color: #1b477b;
+}
+.nav ul li .btn {
+  display: inline-block;
+  background: #1b477b;
+  color: #ffffff;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* 轮播图 */
+.banner {
+  position: relative;
+}
+.banner .swiper-container {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: block;
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; */
+}
+.banner .swiper_img {
+  width: 100%;
+  object-fit: cover;
+}
+.banner .next {
+  position: absolute;
+  left: 361px;
+  top: 332px;
+  z-index: 100;
+}
+.banner .next img {
+  width: 70px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.banner .prev {
+  position: absolute;
+  right: 362px;
+  top: 332px;
+  z-index: 100;
+}
+.banner .prev img {
+  width: 70px;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* 轮播图下面的 半透明黑背景 */
+.banner .banner_background {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.47) 100%
+  );
+  width: 100%;
+  height: 273px;
+}
+/* 轮播图下面的 文字 */
+.banner .banner_Text {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  height: 273px;
+}
+.banner .banner_title {
+  position: absolute;
+  left: 361px;
+  top: 123px;
+  color: #ffffff;
+  font-size: 49px;
+  font-family: FuturaBT-BoldItalic, FuturaBT;
+}
+.banner .banner_info {
+  position: absolute;
+  color: #ffffff;
+  left: 361px;
+  top: 192px;
+  font-size: 22px;
+  width: 850px;
+  line-height: 30px;
+  text-align: left;
+}
+/* 中间部分 */
+.container {
+  width: 100%;
+  min-width: 1200px;
+}
+.container .content {
+  margin: 0 auto;
+  width: 1200px;
+}
+/* foot */
+.foot {
+  min-width: 1200px;
+  background: #1b477b;
+  min-height: 492px;
+  padding-top: 32px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+.foot .foot_content {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.foot .foot_img img {
+  width: 227px;
+  height: 83px;
+  object-fit: cover;
+  margin-bottom: 60px;
+}
+.foot .foot_info {
+  display: block;
+  /* flex-wrap: wrap; */
+}
+.foot .foot_info > div {
+  float: left;
+}
+.foot .foot_one {
+  width: 387px;
+  line-height: 35px;
+  margin-right: 54px;
+}
+.foot .foot_two {
+  width: 387px;
+}
+.foot .foot_two a {
+  color: #c5c5c5;
+}
+.foot .foot_two a:hover {
+  text-decoration: underline;
+}
+.foot .foot_three {
+  width: 320px;
+}
+
+.foot .foot_three a {
+  display: block;
+  color: #c5c5c5;
+  line-height: 35px;
+}
+.foot .foot_three a:hover {
+  text-decoration: underline;
+}
+.foot .foot_title {
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.foot .foot_text {
+  color: #c5c5c5;
+  font-size: 14px;
+}
+.foot .foot_two {
+  color: #c5c5c5;
+  font-size: 14px;
+  line-height: 35px;
+  margin-right: 48px;
+}
+.foot .foot_three_text {
+  color: #c5c5c5;
+  font-size: 14px;
+  line-height: 35px;
+}
+/* footer */
+.footer {
+  min-width: 1200px;
+  background: #133d6f;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.footer .footer_content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer_text {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+}
