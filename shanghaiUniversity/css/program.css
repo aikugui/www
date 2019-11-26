@@ -1,6 +1,11 @@
+.container {
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
 .banner .banner_background {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -138,7 +143,7 @@
   display: block;
   text-decoration: none;
   color: #333333;
-  padding: 12px;
+  padding: 22px 12px;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
