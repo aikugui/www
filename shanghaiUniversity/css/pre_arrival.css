@@ -1,0 +1,137 @@
+/* banner */
+.banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  position: relative;
+  line-height: 0;
+}
+.banner .banner_title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 49px;
+  line-height: 76px;
+  text-align: center;
+  font-family: FuturaBT-BoldItalic, FuturaBT;
+}
+
+/* content_tainer */
+.content_tainer {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content_tainer .arrival-pic-group{
+  margin: 0 -25px;
+  padding: 110px 0 0 0;
+  overflow: hidden;
+}
+
+.content_tainer .arrival-pic-group .pic{
+  float: left;
+  margin: 0 0 180px 0;
+  padding: 3px 32px 0;
+  width: 33.33%;
+  box-sizing: border-box;
+  /* width: 353px;
+  height: 357px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 10px 1px #ddd;
+  -ms-box-shadow: 0px 6px 10px 1px #ddd;
+  -moz-box-shadow: 0px 6px 10px 1px #ddd;
+  -webkit-box-shadow: 0px 6px 10px 1px #ddd; */
+}
+.content_tainer .arrival-pic-group .pic .inner{
+  height: 357px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 6px 10px 1px #ddd;
+  -ms-box-shadow: 0px 6px 10px 1px #ddd;
+  -moz-box-shadow: 0px 6px 10px 1px #ddd;
+  -webkit-box-shadow: 0px 6px 10px 1px #ddd;
+  cursor: pointer;
+}
+
+.content_tainer .arrival-pic-group .pic .inner > img{
+  margin: 70px 0 0;
+}
+
+.content_tainer .arrival-pic-group .pic .inner > div{
+  margin: 40px 0 0;
+  color: #333333;
+  font-size: 29px;
+  line-height: 32px;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  overflow: hidden;
+}
+
+/* Useful */
+.useful {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.useful_title {
+  text-align: center;
+  color: #000000;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.userful_content {
+  overflow: hidden;
+}
+
+.useful_one {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+}
+
+.useful_two {
+  float: left;
+  padding: 0 57px 0 40px;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+.useful_three {
+  float: left;
+  width: 33.33%;
+}
+
+.useful_one_title {
+  text-indent: 60px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 34px;
+}
+
+.useful_one_text {
+  font-size: 20px;
+  color: #333333;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.useful_dashed {
+  border-right: 1px dashed #bcbcbc;
+  box-sizing: border-box;
+}
