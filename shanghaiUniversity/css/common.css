@@ -208,7 +208,8 @@
 /* 轮播图下面的 半透明黑背景 */
 .banner .banner_background {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
+  bottom: 3px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
