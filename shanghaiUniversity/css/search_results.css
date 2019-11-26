@@ -1,0 +1,44 @@
+.container {
+  border-top: solid 1px #f0f0f0;
+}
+.container .content .result-title {
+  padding: 29px 0;
+  border-bottom: solid 1px #f0f0f0;
+}
+.container .content .result-title .title {
+  line-height: 32px;
+  font-size: 28px;
+  color: #000;
+}
+.container .content .result-title .text {
+  margin: 10px 0 0;
+  line-height: 12px;
+  font-size: 18px;
+  color: #787878;
+}
+.container .content .result-item {
+  padding: 28px 0;
+  border-bottom: solid 1px #f0f0f0;
+}
+.container .content .result-item .title {
+  line-height: 22px;
+  font-size: 24px;
+  color: #333;
+}
+.container .content .result-item .text {
+  margin: 20px 0 15px;
+  line-height: 27px;
+  font-size: 20px;
+  color: #333;
+}
+
+.container .content .result-item a {
+  line-height: 22px;
+  font-size: 22px;
+  color: #1b477b;
+}
+
+.container .content .result-item a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
